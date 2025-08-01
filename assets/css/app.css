@@ -27701,6 +27701,11 @@ Elements
 /*  Button CSS START
 /*----------------------------------------*/
 
+ .register-now-btn:hover {
+    background-color: #fff !important;
+    color: #567656 !important;
+  }
+
 .cus-btn {
     position: relative;
     display: inline-flex;
@@ -27792,8 +27797,8 @@ Elements
     flex-shrink: 0;
     align-items: center;
     gap: clamp(4px, 0.417vw, 16px);
-    padding: 16px 46px;
-    font-size: 16px;
+    padding: 10px 35px;
+    font-size: 12px;
     font-family: "Inter", sans-serif;
     font-weight: 600;
     text-transform: none;
@@ -27816,7 +27821,7 @@ Elements
 }
 
 .cus-btn-2 .arr-1 {
-    right: 27px;
+    right: 15px !important;
     transform: rotate(-45deg);
 }
 
@@ -28591,15 +28596,15 @@ label.error {
     position: absolute;
 }
 
-.header.header-1.style-2 {
+/* .header.header-1.style-2 {
     top: 50px;
-}
+} */
 
 .header.header-1 .main-menu {
     height: 112px;
     display: grid;
     align-content: center;
-    background-color: #fff;
+    /* background-color: #fff; */
     padding: 0px 30px;
     border-radius: 0px 0px 24px 24px;
 }
@@ -29554,13 +29559,47 @@ label.error {
 }
 
 .hero-slideshow .slide-1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../media/images/1.jpg") no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     background-position: 20% center;
     background-size: cover;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
+
+.slide-1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.slide-1 .bg-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    z-index: 0;
+}
+
+.hero-content-overlay {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+}
+
+.slide-1::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* overlay */
+    z-index: 1;
+}
+
 
 .hero-slideshow .slide-1 .hero-content {
     position: relative;
