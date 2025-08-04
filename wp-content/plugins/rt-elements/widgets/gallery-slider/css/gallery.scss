@@ -1,0 +1,41 @@
+.gallery-slider{
+     .single__image{
+          img{
+               display: block;
+          }
+     }
+     .rt-swiper-navigation{
+          position: absolute;
+          top: 50%;
+          transform: translateY(-50%);
+          z-index: 9;
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+          .swiper-prev, .swiper-next{
+               display: block;
+               color: #ffffff;
+               padding: 5px 0;
+               font-size: 20px;
+               width: 40px;
+               height: 40px;
+               background: var(--e-global-color-primary);
+               text-align: center;
+               line-height: 1.5;
+          }
+          .swiper-prev{
+               position: relative;
+               z-index: 1;
+               cursor: pointer;
+               border-radius: 0 20px 20px 0;
+          
+          }
+          .swiper-next{
+               position: relative;
+               z-index: 1;
+               cursor: pointer;
+               border-radius: 20px 0 0 20px;
+          }
+     }
+}
+

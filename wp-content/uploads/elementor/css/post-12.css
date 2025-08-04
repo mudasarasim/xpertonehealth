@@ -1,0 +1,90 @@
+.elementor-kit-12 {
+    --e-global-color-primary: #764DF0;
+    --e-global-color-secondary: #442490;
+    --e-global-color-text: #FFFFFFBF;
+    --e-global-color-accent: #FFFFFF;
+    --e-global-typography-primary-font-family: "Manrope";
+    --e-global-typography-primary-font-weight: 600;
+    --e-global-typography-secondary-font-family: "Manrope";
+    --e-global-typography-secondary-font-weight: 400;
+    --e-global-typography-secondary-letter-spacing: 1px;
+    --e-global-typography-text-font-family: "Manrope";
+    --e-global-typography-text-font-weight: 400;
+    --e-global-typography-text-letter-spacing: 1px;
+    --e-global-typography-accent-font-family: "Manrope";
+    --e-global-typography-accent-font-weight: 500;
+    --e-global-typography-accent-letter-spacing: 1px;
+}
+
+.elementor-kit-12 h1 {
+    font-family: "Manrope", Sans-serif;
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.elementor-kit-12 h2 {
+    font-family: var( --e-global-typography-primary-font-family), Sans-serif;
+    font-weight: var( --e-global-typography-primary-font-weight);
+}
+
+.elementor-kit-12 h3 {
+    font-family: var( --e-global-typography-primary-font-family), Sans-serif;
+    font-weight: var( --e-global-typography-primary-font-weight);
+}
+
+.elementor-kit-12 h4 {
+    font-family: var( --e-global-typography-primary-font-family), Sans-serif;
+    font-weight: var( --e-global-typography-primary-font-weight);
+}
+
+.elementor-kit-12 h5 {
+    font-family: var( --e-global-typography-primary-font-family), Sans-serif;
+    font-weight: var( --e-global-typography-primary-font-weight);
+}
+
+.elementor-kit-12 h6 {
+    font-family: var( --e-global-typography-primary-font-family), Sans-serif;
+    font-weight: var( --e-global-typography-primary-font-weight);
+}
+
+.elementor-section.elementor-section-boxed>.elementor-container {
+    max-width: 1300px;
+}
+
+.e-con {
+    --container-max-width: 1300px;
+}
+
+.elementor-widget:not(:last-child) {
+    margin-block-end: 20px;
+}
+
+.elementor-element {
+    --widgets-spacing: 20px 20px;
+    --widgets-spacing-row: 20px;
+    --widgets-spacing-column: 20px;
+}
+
+{}
+
+h1.entry-title {
+    display: var(--page-title-display);
+}
+
+@media(max-width:1024px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 1024px;
+    }
+    .e-con {
+        --container-max-width: 1024px;
+    }
+}
+
+@media(max-width:767px) {
+    .elementor-section.elementor-section-boxed>.elementor-container {
+        max-width: 767px;
+    }
+    .e-con {
+        --container-max-width: 767px;
+    }
+}

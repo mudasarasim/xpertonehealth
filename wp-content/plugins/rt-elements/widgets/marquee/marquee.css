@@ -1,0 +1,116 @@
+.abs-middle {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.w-40px {
+    width: 40px;
+}
+
+.abs,
+.absolute {
+    position: absolute;
+}
+
+.marquee-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100000px;
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+    -webkit-animation: 30s linear 0s infinite normal none running marqueeAnimation;
+    animation: 30s linear 0s infinite normal none running marqueeAnimation;
+    gap: 290px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.marquee-wrapper.left {
+    -webkit-animation: 30s linear 0s infinite normal none running marqueeAnimation;
+    animation: 30s linear 0s infinite normal none running marqueeAnimation;
+}
+
+.marquee-wrapper.right {
+    -webkit-animation: 30s linear 0s infinite normal none running marqueeAnimation-reverse;
+    animation: 30s linear 0s infinite normal none running marqueeAnimation-reverse;
+}
+
+.js-marquee {
+    float: left;
+    margin-right: 0;
+    white-space: nowrap;
+}
+
+.js-marquee .marquee_separator {
+    margin: 0 15px;
+    font-size: 3.75rem;
+    color: var(--e-global-color-accent);
+    opacity: 0.2;
+}
+
+.js-marquee .marquee_text {
+    font-size: 3.75rem;
+    color: var(--e-global-color-accent);
+    font-weight: 500;
+    margin: 0 15px;
+}
+
+.rt-marquee-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: top;
+    -ms-flex-align: top;
+    align-items: top;
+    -webkit-animation: loop 40s infinite linear;
+    animation: loop 40s infinite linear;
+}
+
+@-webkit-keyframes marqueeAnimation {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-2516.38px);
+        transform: translateX(-2516.38px);
+    }
+}
+
+@keyframes marqueeAnimation {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX(-2516.38px);
+        transform: translateX(-2516.38px);
+    }
+}
+
+@-webkit-keyframes marqueeAnimation-reverse {
+    0% {
+        -webkit-transform: translateX(-2516.38px);
+        transform: translateX(-2516.38px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+@keyframes marqueeAnimation-reverse {
+    0% {
+        -webkit-transform: translateX(-2516.38px);
+        transform: translateX(-2516.38px);
+    }
+    100% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+}
+
+/*# sourceMappingURL=marquee.css.map */
